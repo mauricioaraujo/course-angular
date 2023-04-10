@@ -11,9 +11,7 @@ import {
 @Component({
   selector: 'app-root',
   template: `
-    <app-title *ngIf="destruir"></app-title>
-    <br />
-    <button (click)="destruirComponent()">Destruir componente</button>
+    <app-data-binding></app-data-binding>
     <router-outlet></router-outlet>
   `,
 })
