@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.scss'],
 })
 export class DataBindingComponent implements OnInit {
-  public nome: string = 'Maurício';
-  public idade: number = 25;
+  public checkedDisabled: boolean = false;
+
+  public alertaInfo(valor: string) {
+    alert(valor);
+  }
+
+  public title: string = 'exemplo';
 
   constructor() {}
 
